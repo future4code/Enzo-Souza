@@ -1,4 +1,5 @@
-Alunos(as), sejam bem-vindos(as)!
+Alunos(as), sejam bem-vindos(as)
+
 
 Esse repositório vai acompanhar vocês até o final do curso, para mantermos a organização, sugerimos que vocês sigam a seguinte estrutura:
 
