@@ -1,7 +1,6 @@
 //EXERCICIO
 //let a = 10
 //let b = 10
-
 //console.log(b)
 //R: 10
 
@@ -28,8 +27,8 @@
 //alert(`Voce recebe ${horasDeTrabalho/quantoRecebe} por hora`)
 
 
-// let nome =
-// let idade =
+ //let nome =
+ //let idade =
 //console.log(typeof nome)
 //console.log(typeof idade)
 //R: acredito que o erro no console é pq não foi declarado nenhum valor para as variaveis.
@@ -57,12 +56,12 @@
 //console.log(suco, rSuco)
 
 
-let a = 10
-let b = 25
-c = a
-a = b
-b = c
+//let a = 10
+//let b = 25
+//c = a
+//a = b
+//b = c
 
-console.log("O novo valor de a é", a) //o novo valor é 25
-console.log("O novo valor de b é", b) //o novo valor é 10
+//console.log("O novo valor de a é", a) //o novo valor é 25
+//console.log("O novo valor de b é", b) //o novo valor é 10
 
