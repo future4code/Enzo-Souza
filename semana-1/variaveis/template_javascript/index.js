@@ -35,26 +35,26 @@
 //R: acredito que o erro no console é pq não foi declarado nenhum valor para as variaveis.
 
 
-let nome = prompt("Qual seu nome?")
-let idade = prompt("Qual sua idade?")
+//let nome = prompt("Qual seu nome?")
+//let idade = prompt("Qual sua idade?")
 
-console.log(typeof nome)
-console.log(typeof idade)
+//console.log(typeof nome)
+//console.log(typeof idade)
 //notei que apareceu no console o nome e a idade que foi respondida na caixa.
 
-console.log("Olá", nome, "você tem", idade, "anos")
+//console.log("Olá", nome, "você tem", idade, "anos")
 
-let cafe = "Você gosta de café?"
-let refrigerante = "Você gosta de refrigerante?"
-let suco = "Você gosta de suco?"
+//let cafe = "Você gosta de café?"
+//let refrigerante = "Você gosta de refrigerante?"
+//let suco = "Você gosta de suco?"
 
-const rCafe = "sim"
-const rRefrigerante = "sim"
-const rSuco = "sim"
+//const rCafe = "sim"
+//const rRefrigerante = "sim"
+//const rSuco = "sim"
 
-console.log(cafe, rCafe)
-console.log(refrigerante, rRefrigerante)
-console.log(suco, rSuco)
+//console.log(cafe, rCafe)
+//console.log(refrigerante, rRefrigerante)
+//console.log(suco, rSuco)
 
 
 let a = 10
@@ -63,5 +63,6 @@ c = a
 a = b
 b = c
 
-console.log("O novo valor de a é", a)
-console.log("O novo valor de b é", b)
+console.log("O novo valor de a é", a) //o novo valor é 25
+console.log("O novo valor de b é", b) //o novo valor é 10
+
