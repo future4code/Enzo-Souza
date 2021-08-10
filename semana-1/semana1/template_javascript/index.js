@@ -66,4 +66,4 @@ console.log("O primeiro número é maior que o segundo?" , numero1 > numero2)
 console.log("O primeiro numero é igual ao segundo?" , numero1 === numero2)
 console.log("O primeiro numero é divisível pelo segundo?" , resultado == 0)
 console.log ("O segundo numero é divisível pelo primeiro?" , resultado == 0)
-//R:Se numero1 e numero2 for divisivel restara 0, se não for restará 1.
+//R:Se numero1 e numero2 for divisivel restara 0, se não for restará 1. 
