@@ -41,7 +41,7 @@
 // c) Considere que um usuário queira comprar uma Pêra, qual seria a mensagem impressa 
 // no console se retirássemos o break que está logo acima do default 
 // (o break indicado pelo comentário "BREAK PARA O ITEM c.")?
-//seria pêra juntamente com o valor nao atribuido.
+//seria o valor 5 atribuido.
 
 // const numero = Number(prompt("Digite o primeiro número."))
 
@@ -66,21 +66,44 @@ if (podeDirigir >= 18) {
 } else { 
   console.log ("Não pode dirigir") }
 
+const periodo = prompt("qual turno? m ,v , n")
+  if (periodo === "M"){
+      console.log("Bom dia!")
+    } else if (periodo === "V"){
+      console.log("Boa tarde!")
+    } else if (periodo === "N"){
+      console.log("Boa noite!")
+    } else {
+      console.log("Erro!")
+    }
 
-function qualTurnoeh (matutino, vespertino, noturno){
-  if (matutino === "m") { console.log ("Bom dia!")
-} 
-
-else if (vespertino === "v") {
-  console.log("Boa tarde!")
-} 
-
-else if (noturno === "n") { console.log("Boa noite!")
+const qualTurno1 = prompt("Qual turno?").toLowerCase()
+switch(qualTurno1) {
+case  "M" :
+console.log("Bom dia!");
+break;
+case  "v" :
+  console.log("boa tarde!");
+  break;
+case  "n" :
+  console.log("boa noite!");
+  break;
+  
 }
-else { console.log ("digite um turno válido.")}
 
+
+// Considere a situação: você vai ao cinema com um amigo ou amiga, porém ele/ela 
+// só assistirá a um filme com você se ele for do gênero fantasia e se o ingresso está abaixo de 15 reais. 
+// Faça um código que pergunta ao usuário qual o gênero de filme que vão assistir e 
+// outra pergunta sobre o preço do ingresso, então verifique se seu amigo ou amiga vai topar assistir o filme. 
+// Caso positivo, imprima no console a mensagem: "Bom filme!", caso contrário, imprima "Escolha outro filme :("
+
+const genero = prompt("Qual gênero de filme você quer assistir?")
+const preco = Number(prompt("Qual o preço do ingresso?"))
+if (genero === "fantasia" && preco <= 15){
+  console.log("Bom filme!")
 }
-const turnoDefinido = prompt("Qual seu turno? Digite M para manhã, V para tarde e N para noite").toLowerCase()
-qualTurnoeh (turnoDefinido)
+else {
+  console.log ("Escolha outro filme.")
+}
 
-//vou terminar depois 
