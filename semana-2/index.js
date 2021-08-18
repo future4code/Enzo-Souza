@@ -66,7 +66,7 @@ if (podeDirigir >= 18) {
 } else { 
   console.log ("Não pode dirigir") }
 
-const periodo = prompt("qual turno? m ,v , n")
+const periodo = prompt("qual turno? m ,v , n").toLowerCase()
   if (periodo === "M"){
       console.log("Bom dia!")
     } else if (periodo === "V"){
