@@ -97,9 +97,23 @@ function doisNumero (numero1,numero2) {
 // peça para o usuário inserir dois números e chame essas 4 funções com esses valores inputados pelo usuário 
 // sendo o argumento. Por fim, mostre no console o resultado das operações:
 
-const somar = (n1 , n2) => {
-	resultadoSoma = n1 , n2
+function somar (n1,n2) {
+	const resultadoSoma = n1 + n2
+	console.log(resultadoSoma)
 }
 
+function subtracao (n1,n2) {
+	const resultadoSubtracao = n1 - n2
+	console.log(resultadoSubtracao)
+}
+
+function multiplicar (n1,n2) {
+	const resultadoMultiplicar = n1 * n2
+	console.log(resultadoMultiplicar)
+}
+function divisao (n1,n2) {
+	const resultadoDivisao = n1 / n2
+	console.log(resultadoDivisao)
+}
 
 	
