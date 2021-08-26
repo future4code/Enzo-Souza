@@ -27,8 +27,6 @@ button:focus {
 
 img {
     width: 50px;
-
-
 }
 
 div>p:first-child {
@@ -121,6 +119,13 @@ td button {
     color: black;
 }
 
+#button-compras:hover {
+    color: white;
+    background-color: #2274a5;
+   
+}
+
+
 .container-do-search {
     margin-top: 20px;
     height: 100px;
@@ -139,4 +144,12 @@ td button {
 
 #back-button:hover {
     background-color: #635a3d
+}
+
+#buscabarra {
+    border-color:#fe7e02; 
+    border-top: 0px;
+    border-left: 0px;
+    border-width: 10px;
+    border-right: 0px;
 }
