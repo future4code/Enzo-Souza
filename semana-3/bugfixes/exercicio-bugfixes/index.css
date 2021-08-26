@@ -3,6 +3,10 @@
   *  ESTILOS GERAIS 
   *
   **/
+body {
+    font-family: sans-serif;
+
+}
 
 * {
     margin: 10;
@@ -14,6 +18,10 @@ h2 {
     padding: 10px 5px 10px 5px;
     color: white;
     text-align: center;
+}
+
+h3 {
+    font-family: sans-serif;
 }
 
 input {
@@ -79,6 +87,7 @@ div img {
 }
 
 #container-de-descricao>ol {
+    font-family: sans-serif;
     padding: 15px 0px;
 }
 
@@ -107,6 +116,7 @@ div:last-child {
 table {
     width: 50%;
     text-align: center;
+    font-family:sans-serif;
    
 }
 
@@ -150,6 +160,6 @@ td button {
     border-color:#fe7e02; 
     border-top: 0px;
     border-left: 0px;
-    border-width: 10px;
+    border-width: 3px;
     border-right: 0px;
 }
