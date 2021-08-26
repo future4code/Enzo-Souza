@@ -114,9 +114,10 @@ div:last-child {
 }
 
 table {
-    width: 50%;
+    width: 80%;
     text-align: center;
     font-family:sans-serif;
+    margin-left: 150px;
    
 }
 
