@@ -1,0 +1,187 @@
+/* https://ianlunn.co.uk/portfolio/tigi-hair-reborn */
+
+body    {
+       
+        align-items: center;
+        display: flex;
+        color:  aliceblue;
+        font-family: sans-serif;
+        background: rgb(45, 43, 47);  
+        background-image: url(img/sitelabenu.jpg); 
+}
+     
+div.container {
+        list-style-type:armenian;
+        font-family: monospace;
+        position: absolute;
+        margin-top: 20%;
+        margin-left: 20%;
+}
+
+.line {
+        color:rgb(250, 251, 252);
+        font-family:monospace;
+        font-size: 1cm;
+        margin:0 20px;
+        white-space: nowrap;
+        overflow: hidden;
+}
+
+.line2 {
+    color:rgb(250, 251, 252);
+    font-family:monospace;
+    font-size: 0.5cm;
+    margin:0 20px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.line3 {
+    color:rgb(250, 251, 252);
+    font-family:monospace;
+    font-size: 0.5cm;
+    margin:0 20px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.typeanimacao {
+        animation: blinkcursor 500ms steps(40) infinite normal, typing 4s steps(35) 1s normal both;
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 15cm;
+    }
+    
+}
+@keyframes blinkcursor {
+    from {
+        border-rigth-color: rgba(255, 255, 255, 0.75);
+} 
+to {
+    border-right-color: transparent;
+}
+    
+}
+
+.imgeu     {
+        border-style:solid;
+        border-color: #476da3;
+        margin-top: 15%;
+        border-radius: 50%;
+        margin-left: 55%;    
+        width: 20%;
+}
+
+.imgicon    {
+        
+        border-style:solid;
+        border-color: #476da3;
+        margin-top: 15%;
+        border-radius: 80%;
+        margin-left: 55%;    
+        width: 20%;
+
+}
+
+.img3    {
+        
+    border-style:solid;
+    border-color: #476da3;
+    margin-top: 5%;
+    border-radius: 100%;
+    margin-left: 1%;    
+    width: 40%;
+   
+
+}
+
+ul {
+        
+        position: fixed;       
+        top: 0%;
+        font-family: monospace;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        left: 0px;
+        overflow: hidden;
+      
+}
+  
+  li {
+        
+        float: left;
+        border-right: 1px solid rgb(40, 37, 46);
+}
+
+a {
+       
+        color: black;
+        display: block;
+        padding: 8px;
+        background-color: #476fa7;
+}
+  
+  li a {
+        display: block;
+
+        text-align: center;
+        padding: 18px 124.5px;
+        padding-right: 201.2px;
+        text-decoration: none;
+   
+}
+  
+
+  li a:hover {
+        background-color: rgb(255, 253, 253);
+}
+
+p {
+    font-size: larger;
+    line-height: normal;    
+}
+
+
+
+
+
+.quemsou {
+        text-align:justify;
+        list-style-type:armenian;
+        font-family: monospace;
+        position: absolute;
+        margin-top: 15%;
+        margin-left: 150px;
+       
+        
+}
+
+.quemsou2 {
+    text-align:justify;
+    list-style-type:armenian;
+    font-family: monospace;
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 150px;  
+}
+
+
+.quemsou3 {
+   
+    list-style-type:circle;
+    font-family: monospace;
+    position: absolute;
+    margin-top: 35%;
+    margin-left: 130px;  
+}
+
+div.container2 {
+    
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 15%;
+}
+
