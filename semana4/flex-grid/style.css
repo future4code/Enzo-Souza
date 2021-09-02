@@ -1,5 +1,30 @@
-/* problemas com a internet e só consegui acesso dps, vou upando o exercicio aos poucos */
+/* essa propriedade do * ele zera margem padrão e padding padrão do navegador. */
+/* o border box vai impedir do elemento de aumentar o tamanho dele. espreme o conteudo não aumenta o px, cont com a width definida. */
+/* padding é a distancia  entre o conteudo do elemento e a borda */
+/* a margin é a distancia entre um elemento e outro dentro, do layout.fora da borda */
 
-body {
-    background-color: pink;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;         
 }
+
+header {
+    background-color: mediumvioletred ;
+    height: 70px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 8px;
+}
+
+img {
+    width: 20px;
+}
+
+main {
+    background-color: aqua;
+   
+}
+
