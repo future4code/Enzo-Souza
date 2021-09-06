@@ -185,3 +185,28 @@ div.container2 {
     margin-left: 15%;
 }
 
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    
+}
+
+.quemsou4 {
+    list-style-type: circle;
+    font-family: monospace;
+    position: absolute;
+    margin-top: 10vh;
+    margin-left: 600px;
+}
+
+.quemsou5 {
+    list-style-type: circle;
+    font-family: monospace;
+    position: absolute;
+    margin-top: 30vh;
+    margin-left: 380px;
+}
+button {
+    background-color: black;
+    color: #476da3;
+    border-color: #476da3;
+    font-family: monospace;
+}
