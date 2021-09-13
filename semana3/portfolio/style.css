@@ -1,4 +1,4 @@
-/* https://ianlunn.co.uk/portfolio/tigi-hair-reborn */
+
 
 body    {
        
@@ -18,6 +18,7 @@ div.container {
         margin-left: 20%;
 }
 
+
 .line {
         color:rgb(250, 251, 252);
         font-family:monospace;
@@ -34,7 +35,9 @@ div.container {
     margin:0 20px;
     white-space: nowrap;
     overflow: hidden;
+    
 }
+
 .line3 {
     color:rgb(250, 251, 252);
     font-family:monospace;
@@ -43,9 +46,11 @@ div.container {
     white-space: nowrap;
     overflow: hidden;
 }
+
 .typeanimacao {
         animation: blinkcursor 500ms steps(40) infinite normal, typing 4s steps(35) 1s normal both;
 }
+
 @keyframes typing {
     from {
         width: 0;
@@ -98,8 +103,8 @@ to {
 }
 
 ul {
-        
-        position: fixed;       
+        width: 100%;
+        position:fixed;       
         top: 0%;
         font-family: monospace;
         list-style-type: none;
@@ -112,11 +117,12 @@ ul {
   
   li {
         
-        float: left;
+        float:left;
         border-right: 1px solid rgb(40, 37, 46);
+        width:24.9%
 }
 
-a {
+a  {
        
         color: black;
         display: block;
@@ -125,13 +131,11 @@ a {
 }
   
   li a {
-        display: block;
-
+        display:block;
         text-align: center;
-        padding: 18px 124.5px;
-        padding-right: 201.2px;
-        text-decoration: none;
-   
+        padding: 18px 0px;
+        padding-right: 0%;
+        text-decoration: none;   
 }
   
 
@@ -139,7 +143,7 @@ a {
         background-color: rgb(255, 253, 253);
 }
 
-p {
+p  {
     font-size: larger;
     line-height: normal;    
 }
@@ -150,7 +154,7 @@ p {
 
 .quemsou {
         text-align:justify;
-        list-style-type:armenian;
+        /* list-style-greasy-key.surge.shtype:armenian; */
         font-family: monospace;
         position: absolute;
         margin-top: 15%;
@@ -165,7 +169,7 @@ p {
     font-family: monospace;
     position: absolute;
     margin-top: 15%;
-    margin-left: 150px;  
+    margin-left: 140px;  
 }
 
 
@@ -178,10 +182,37 @@ p {
     margin-left: 130px;  
 }
 
-div.container2 {
-    
-    text-align: center;
-    margin-top: 10%;
-    margin-left: 15%;
+.quemsou4 {
+   
+    list-style-type:circle;
+    font-family: monospace;
+    position: absolute;
+    margin-top: 37%;
+    margin-left: 600px;  
+}
+.quemsou5 {
+   
+    list-style-type:circle;
+    font-family: monospace;
+    position: absolute;
+    margin-top: 670px;
+    margin-left: 380px;  
 }
 
+
+div.container2 {
+    text-align: center;
+    list-style-type:circle;
+    font-family: monospace;
+    position: absolute;
+    margin-top:45%;
+    margin-left: 175px;  
+}
+
+button {
+    background-color: black;
+    color:#476da3;
+    border-color: #476da3;
+    font-family: monospace;
+    
+}
