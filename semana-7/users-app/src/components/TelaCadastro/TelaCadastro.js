@@ -29,6 +29,7 @@ export default class TelaCadastro extends React.Component {
             axios.post(url, body, {
                 headers: {
                      Authorization: "enzo-souza-maryam"
+                    //  ficar atento sempre no headers, verifica se está tudo igual.
                 }
             })
             .then((res) => {

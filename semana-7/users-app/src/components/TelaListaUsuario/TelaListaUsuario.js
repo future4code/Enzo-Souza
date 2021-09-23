@@ -27,6 +27,7 @@ const CardUsuario = styled.div`
             axios.get(url, {
                 headers: {
                     Authorization: "enzo-souza-maryam"
+                    // prestar atenção na escrita do headers
                  }
             }) 
             .then((res) => {

@@ -3,7 +3,7 @@ import TelaCadastro from './components/TelaCadastro/TelaCadastro'
 import TelaListaUsuario from './components/TelaListaUsuario/TelaListaUsuario'
 import Axios from 'axios'
 
-
+// aplicação feita do 0.------
   
    export default class App extends React.Component {
     //  definindo meu estado atual.
