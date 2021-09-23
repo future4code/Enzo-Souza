@@ -1,7 +1,8 @@
-import React from 'react';
+import React from 'react'
 import TelaCadastro from './components/TelaCadastro/TelaCadastro'
 import TelaListaUsuario from './components/TelaListaUsuario/TelaListaUsuario'
-import axios from 'axios'
+import Axios from 'axios'
+
 
   
    export default class App extends React.Component {

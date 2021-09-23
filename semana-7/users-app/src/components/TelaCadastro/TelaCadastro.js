@@ -28,21 +28,19 @@ export default class TelaCadastro extends React.Component {
         }
             axios.post(url, body, {
                 headers: {
-                     Authorization: "enzo-souza-turma"
+                     Authorization: "enzo-souza-maryam"
                 }
             })
             .then((res) => {
-                console.log(res)
+                
                 alert("Usuário(a) cadastrado(a) com sucesso!")
                 this.setState({name: "" , email: ""})
-                // this.pegarUsuarios()
                 // o this.setState acima é para limpar o input 
             })
             .catch((erro) => {
+               
                 alert("Tente novamente")
             })
-
-            
         
     
     }
