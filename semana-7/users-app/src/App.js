@@ -1,96 +1,43 @@
-  import logo from './logo.svg';
-  import './App.css';
-  import React from 'react';
-  import { render } from '@testing-library/react';
-  import axios from 'axios';
-  import Lista from './components/Lista'
-  import Registro from './components/Registro'
+import React from 'react';
+import TelaCadastro from './components/TelaCadastro/TelaCadastro'
+import TelaListaUsuario from './components/TelaListaUsuario/TelaListaUsuario'
+import axios from 'axios'
+
   
-
- 
-
-
- 
-  const headers = {
-    headers: {
-      Authorization: "enzo-souza-turma"
-    }
-  
-  };
- 
-
    export default class App extends React.Component {
+    //  definindo meu estado atual.
       state = {
-        listaUsuario:[],
-        inputUsuario: "",
-        inputEmail: ""
+       telaAtual: "cadastro"
       }
 
-      componentDidMount() {
-        this.getAllUsers()
-      }
       
-      onChangeInputUsuario = ((event) => {
-        this.setState({inputUsuarios: event.target.value})
-      })
-      onChangeInputEmail = ((event) => {
-        this.setState({inputEmail: event.target.value})
-      })
-
-      createUsers = () => {
-        const url = "https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users"
-
-        const body = {
-          name: this.state.inputUsuario,
-          email: this.state.inputEmail,
+// aqui crio uma função e um switch case para a mudança de tela.{condição}
+      escolheTela = () => {
+        switch(this.state.telaAtual){
+          case "cadastro":
+            // passando função por props/botao para 
+            return <TelaCadastro irParaLista={this.irParaLista} />
+            case "lista":
+              return <TelaListaUsuario irParaCadastro={this.irParaCadastro} />
+              default:
+                return <div> Erro! </div>
         }
-
-        axios.post(url,body,headers)
-        .then((resultado) => {
-          this.setState({inputUsuario: "", inputEmail: ""})
-          this.getAllUsers();
-        })
-        .catch((erro) => {
-           console.log("erro!")
-        })
       }
-      
-      
-    getAllUsers = () => {
-        const url = "https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users"
-        axios
-        .get(url, headers)
-        .then((resultado) => {
-          console.log({listaUsuario: resultado.data})
-          this.setState({listaUsuario: resultado.data})
-        })
+// criei função para ir para cadastro/lista.
+      irParaCadastro = () => {
+        this.setState({telaAtual: "cadastro"})
+      }
 
-        .catch((erro) => {
-          alert("erro!")
-        })
+      irParaLista = () => {
+        this.setState({telaAtual: "lista"})
       }
 
     
     render() {
           return(
             <div>
-              <Registro 
-              inputUsuario={this.state.inputUsuario}
-              inputEmail={this.state.inputEmail}
-              onChangeInputUsuario={this.onChangeInputUsuario}
-              onChangeInputEmail={this.onChangeInputEmail}
-              listaUsuarios={this.state.listaUsuario}
-              createUsers={this.createUsers}
-              />
-              <hr />
-              <Lista 
-              inputUsuario={this.state.inputUsuario}
-              inputEmail={this.state.inputEmail}
-              onChangeInputUsuario={this.onChangeInputUsuario}
-              onChangeInputEmail={this.onChangeInputEmail}
-              listaUsuario={this.state.listaUsuario}
-              createUsers={this.createUsers}
-              />
+               {/* aqui estou chamando a página de lista e abaixo a de Registro */}
+             {this.escolheTela()}
             </div>         
           )
     }
